@@ -1,0 +1,29 @@
+.side-body {
+  /* z-index: -1; */
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  width: 24em;
+  background: #142728;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  text-align: center;
+}
+
+.contents-body-right {
+  margin-left: 24em;
+  color: white;
+}
+
+.review-card {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 766px) {
+  .contents-body {
+    padding-top: 20% !important;
+  }
+}

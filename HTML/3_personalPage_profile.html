@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Event</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../eventDetail/eventDetail.css" />
+    <link rel="stylesheet" href="../index/index.css" />
+    <link rel="stylesheet" href="../personalPage/personalPage.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- Nav bar start -->
+    <div class="div-nav">
+      <nav class="navbar navbar-inverse navbar-fixed-top nav-div">
+        <div class="container-fluid nav-contents-inner">
+          <div class="navbar-header">
+            <a
+              class="navbar-brand nav-page-title"
+              href="../index/_1_index_before_signin(Beginning).html"
+              >Event</a
+            >
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <!-- Search -->
+            <li>
+              <div
+                class="search-container"
+                style="margin-top: 16px; margin-right: 11px"
+              >
+                <form>
+                  <input type="text" placeholder="Search" name="search" />
+                  <a href="#" data-toggle="modal" data-target="#exampleModal">
+                    <span class="glyphicon glyphicon-search nav-icon"></span>
+                  </a>
+                </form>
+              </div>
+            </li>
+            <!-- Filter -->
+            <li>
+              <a
+                data-toggle="modal"
+                data-target="#filterModal"
+                style="cursor: pointer"
+                ><span class="glyphicon glyphicon-th-list nav-icon"></span
+              ></a>
+            </li>
+            <!-- User Signup & Signin -->
+            <li>
+              <a href="../personalPage/personalPage_profile.html"
+                ><span class="glyphicon glyphicon-user nav-icon"></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Nav bar end -->
+
+    <!-- Main contents start -->
+    <div>
+      <div class="contents-body">
+        <!-- Left list menu start -->
+        <ul class="side-body side-body-personal">
+          <li>
+            <a
+              href="../personalPage/personalPage_profile.html"
+              class="side-list-text-main"
+              >Profile</a
+            >
+          </li>
+          <li>
+            <p class="side-list-text-main">Event</p>
+            <div>
+              <a
+                href="../personalPage/personalPage_event_create.html"
+                class="side-list-text-sub"
+                >Create</a
+              >
+            </div>
+            <div>
+              <a
+                href="../personalPage/personalPage_event_manage.html"
+                class="side-list-text-sub"
+                >Manage</a
+              >
+            </div>
+          </li>
+          <li>
+            <p class="side-list-text-main">Booking</p>
+            <a
+              href="../personalPage/personalPage_booking_manage.html"
+              class="side-list-text-sub"
+              >Manage</a
+            >
+          </li>
+        </ul>
+        <!-- Left list menu end -->
+
+        <!-- Right main contents start -->
+        <div class="contents-body-right personal-contents-div">
+          <table style="width: 100%">
+            <tr>
+              <th style="width: 20%">
+                <h1>Jasmine</h1>
+              </th>
+              <th>&nbsp;</th>
+            </tr>
+            <tr>
+              <td><div class="profile-J">J</div></td>
+              <td>
+                First name
+                <input class="form-control" type="text" placeholder="Jasmine" />
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                Last name
+                <input class="form-control" type="text" placeholder="Hur" />
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                Email
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="h.eunyoung3@gmail.com"
+                  readonly
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                Phone
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="0432 795 394"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                Address
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="10 Strattont st. Newstead, QLD, 4006"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                Password
+                <div>
+                  <button type="button" class="btn btn-info">Change</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                Account
+                <div>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><button type="button" class="btn btn-info">Save</button></td>
+            </tr>
+          </table>
+        </div>
+        <!-- Right main contents end -->
+      </div>
+    </div>
+    <!-- Main contents end -->
+
+    <!-- Footer start -->
+    <footer>
+      <p>
+        Jasmine Hur<br />
+        <a href="mailto:n10622012@qut.edu.au">n10622012@qut.edu.au</a><br />
+        <a href="mailto:h.eunyoung3@gmail.com">h.eunyoung3@gmail.com</a>
+      </p>
+    </footer>
+    <!-- Footer end -->
+  </body>
+</html>

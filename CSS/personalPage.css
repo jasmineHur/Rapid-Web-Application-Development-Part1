@@ -1,0 +1,46 @@
+.personal-contents-div {
+  color: black !important;
+  background-color: white;
+  padding: 4em;
+}
+
+.personal-contents-div p {
+  color: black !important;
+}
+
+.side-body-personal {
+  text-align: left;
+  width: auto;
+}
+
+.side-list-text-main {
+  font-size: 20px;
+  color: white !important;
+}
+
+.side-list-text-sub {
+  margin: 10px;
+  font-size: 15px;
+  color: white !important;
+}
+
+.profile-J {
+  background-color: rgb(172, 113, 113);
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 25px;
+}
+
+#editor {
+  padding: 16px 24px;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+}
+
+.booking-img {
+  border-radius: 100px;
+  height: 50px;
+  min-width: 50px !important;
+}

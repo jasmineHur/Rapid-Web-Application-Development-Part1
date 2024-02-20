@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Event</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <head>
+      <!-- Nav bar start -->
+      <div class="div-nav">
+        <nav class="navbar navbar-inverse navbar-fixed-top nav-div">
+          <div class="container-fluid nav-contents-inner">
+            <div class="navbar-header">
+              <a
+                class="navbar-brand nav-page-title"
+                href="../HTML/_1_index_before_signin(Beginning).html"
+                >Event</a
+              >
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+              <!-- Search -->
+              <li>
+                <div
+                  class="search-container"
+                  style="margin-top: 16px; margin-right: 11px"
+                >
+                  <form>
+                    <input type="text" placeholder="Search" name="search" />
+                    <a href="#" data-toggle="modal" data-target="#exampleModal">
+                      <span class="glyphicon glyphicon-search nav-icon"></span>
+                    </a>
+                  </form>
+                </div>
+              </li>
+              <!-- Filter -->
+              <li>
+                <a
+                  data-toggle="modal"
+                  data-target="#filterModal"
+                  style="cursor: pointer"
+                  ><span class="glyphicon glyphicon-th-list nav-icon"></span
+                ></a>
+              </li>
+              <!-- User Signup & Signin -->
+              <li>
+                <a href="#" data-toggle="modal" data-target="#signinModal"
+                  ><span class="glyphicon glyphicon-user nav-icon"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- Nav bar end -->
+    </head>
+    <!-- Main image start -->
+    <a
+      class="main-image-a"
+      href="../HTML/2_eventDetail_before_signin(active1).html"
+    >
+      <div class="main-image">
+        <h1 class="main-image-text">
+          The Nutcracker <br />
+          20.03.23 - 04.04.23
+        </h1>
+      </div>
+    </a>
+    <!-- Main image end -->
+
+    <!-- Upcoming section start -->
+    <div>
+      <div class="contents-body">
+        <div class="section-title">
+          <p>Upcoming</p>
+        </div>
+        <div>
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="card" style="width: 18rem">
+                <div class="sold-out-n-cancel">Sold-Out</div>
+                <a href="../HTML/2_eventDetail_before_signin(sold-out).html"
+                  ><img
+                    src="../IMG/Card1_Swanlake.png"
+                    class="card-img-top card-image"
+                    alt="..."
+                /></a>
+
+                <div class="card-body">
+                  <p class="card-text card-title">Swan Lake</p>
+                  <p class="card-text">Start $60-</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 card-body">
+              <div class="card" style="width: 18rem">
+                <a href="../HTML/2_eventDetail_before_signin(active1).html">
+                  <img
+                    src="../IMG/Card2_Beethoven.png"
+                    class="card-img-top card-image"
+                    alt="..."
+                /></a>
+                <div>
+                  <p class="card-text card-title">Ludwig van Beethoven</p>
+                  <p class="card-text">Start $60-</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 card-body">
+              <div class="card" style="width: 18rem">
+                <a href="../HTML/2_eventDetail_before_signin(active1).html">
+                  <img
+                    src="../IMG/Card3_Monet.png"
+                    class="card-img-top card-image"
+                    alt="..."
+                /></a>
+                <div>
+                  <p class="card-text card-title">Oscar-Claude Monet</p>
+                  <p class="card-text">Start $30-</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 card-body">
+              <div class="card" style="width: 18rem">
+                <a href="../HTML/2_eventDetail_before_signin(active1).html">
+                  <img
+                    src="../IMG/Card4_Nutcraker.png"
+                    class="card-img-top card-image"
+                    alt="..."
+                /></a>
+                <div>
+                  <p class="card-text card-title">The Nutcracker</p>
+                  <p class="card-text">Start $60-</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 card-body">
+              <div class="card" style="width: 18rem">
+                <a href="../HTML/2_eventDetail_before_signin(active1).html">
+                  <img
+                    src="../IMG/Card5_Klimt.png"
+                    class="card-img-top card-image"
+                    alt="..."
+                /></a>
+                <div>
+                  <p class="card-text card-title">Gustav Klimt</p>
+                  <p class="card-text">Start $35-</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 card-body">
+              <div class="card" style="width: 18rem">
+                <div class="sold-out-n-cancel">Cancelled</div>
+                <a href="../HTML/2_eventDetail_before_signin(cancel).html">
+                  <img
+                    src="../IMG/Card6_Danielle Talamantes.png"
+                    class="card-img-top card-image"
+                    alt="..."
+                  />
+                </a>
+                <div>
+                  <p class="card-text card-title">Danielle Talamantes</p>
+                  <p class="card-text">Start $60-</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Upcoming section end -->
+
+      <!-- Orchestra section start -->
+      <div class="contents-body">
+        <div class="section-title">
+          <p>Orchestra</p>
+        </div>
+        <div>
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../IMG/Orche1.png"
+                  class="card-img-top card-image"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text card-title">Orchestra 1</p>
+                  <p class="card-text">Start $60-</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 card-body">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../IMG/Orche2.png"
+                  class="card-img-top card-image"
+                  alt="..."
+                />
+                <div>
+                  <p class="card-text card-title">Orchestra 2</p>
+                  <p class="card-text">Start $60-</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 card-body">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../IMG/Orche3.png"
+                  class="card-img-top card-image"
+                  alt="..."
+                />
+                <div>
+                  <p class="card-text card-title">Orchestra 3</p>
+                  <p class="card-text">Start $30-</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 card-body">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../IMG/Orche4.png"
+                  class="card-img-top card-image"
+                  alt="..."
+                />
+                <div>
+                  <p class="card-text card-title">Orchestra 4</p>
+                  <p class="card-text">Start $60-</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 card-body">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../IMG/Orche5.png"
+                  class="card-img-top card-image"
+                  alt="..."
+                />
+                <div>
+                  <p class="card-text card-title">Orchestra 5</p>
+                  <p class="card-text">Start $35-</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 card-body">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../IMG/Orche6.png"
+                  class="card-img-top card-image"
+                  alt="..."
+                />
+                <div>
+                  <p class="card-text card-title">Orchestra 6</p>
+                  <p class="card-text">Start $60-</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Orchestra section end -->
+
+      <!-- Footer start -->
+      <footer>
+        <p>
+          Jasmine Hur<br />
+          <a href="mailto:n10622012@qut.edu.au">n10622012@qut.edu.au</a><br />
+          <a href="mailto:h.eunyoung3@gmail.com">h.eunyoung3@gmail.com</a>
+        </p>
+      </footer>
+      <!-- Footer end -->
+
+      <!-- Filter Modal start -->
+      <div
+        class="modal fade"
+        id="filterModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Filter</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="categorySelect">Category</label>
+                <select class="form-control" id="categorySelect">
+                  <option>Orchestra</option>
+                  <option>Arts</option>
+                  <option>Vorcal music</option>
+                  <option>Ballet</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="zipcode">Zip Code</label>
+                <input
+                  class="form-control"
+                  id="zipcode"
+                  type="text"
+                  placeholder="4006"
+                />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Filter Modal end -->
+
+      <!-- Signin Modal start -->
+      <div
+        class="modal fade"
+        id="signinModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div><p style="color: black">Welcome to Event!</p></div>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                  />
+                  <small id="emailHelp" class="form-text text-muted"
+                    >We'll never share your email with anyone else.</small
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="Password"
+                  />
+                </div>
+                <a href="../HTML/1_index_after_signi.html"
+                  ><button type="submit" class="btn btn-primary">
+                    Sign In
+                  </button></a
+                >
+              </form>
+            </div>
+            <div class="modal-footer">
+              <p style="color: black">
+                You're not our member yet? <br />
+                <a
+                  data-toggle="modal"
+                  data-target="#signupModal"
+                  style="cursor: pointer"
+                  >Sign up</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Signin Modal end -->
+
+      <!-- Signup Modal start -->
+      <div
+        class="modal fade"
+        id="signupModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="signupModal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signupModal">Create your account</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                  />
+                  <small id="emailHelp" class="form-text text-muted"
+                    >We'll never share your email with anyone else.</small
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">First Name</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Jasmine"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Last Name</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Hur"
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Signup Modal end -->
+  </body>
+</html>
