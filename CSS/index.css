@@ -1,0 +1,495 @@
+body {
+  background-color: #142728;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+p {
+  color: white;
+}
+
+td {
+  padding-bottom: 13px;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid rgb(195, 195, 195);
+  background: rgba(255, 255, 255, 0);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #194b4f;
+  padding: 8px 12px;
+  margin-bottom: 0px;
+}
+
+.div-nav {
+  height: 60px;
+}
+
+.nav-div {
+  background-color: #194b4f;
+  min-height: 7vh;
+}
+
+.nav-contents-inner {
+  width: 85%;
+}
+
+.nav-page-title {
+  color: white !important;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.nav-icon {
+  color: white;
+  font-size: 25px;
+}
+
+.navbar__logo {
+  font-size: 24px;
+}
+
+.navbar__menu li {
+  padding: 10px 20px;
+}
+
+.navbar__icons {
+  list-style: none;
+  display: flex;
+  color: white;
+  padding-left: 0px;
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.navbar__menu li {
+  padding: 8px 13px;
+}
+
+.navbar__menu li:hover {
+  background-color: rgb(87, 170, 166);
+  border-radius: 5px;
+}
+
+.navbar__icons li {
+  padding: 10px;
+}
+
+.navbar__toggleBtn {
+  display: none;
+}
+
+.main-image {
+  min-height: 58vh;
+  background-image: url("../IMG/Nutcracker_main.jpeg");
+  background-size: cover;
+  text-align: center;
+}
+
+.main-image-a {
+  font-size: 100px;
+  color: #ffffff3d;
+  line-height: 55vh;
+}
+
+.main-image-text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.472);
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.contents-body {
+  margin: auto;
+  padding-left: 24%;
+  padding-right: 24%;
+}
+
+.section-title {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.sold-out-n-cancel {
+  background: rgb(210, 210, 210);
+  border-radius: 10px;
+  color: rgb(140, 5, 5);
+  width: 100%;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer {
+  position: relative;
+  z-index: 999;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 4em;
+  text-align: center;
+  background-color: #194b4f;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Event Detail CSS start */
+.map-img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.banner-img {
+  width: 18rem;
+  padding-bottom: 2%;
+}
+
+.side-body {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  width: 24em;
+  background: #142728;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  text-align: center;
+}
+
+.contents-body-right {
+  padding-right: 20px;
+  padding-left: 20px;
+  color: white;
+}
+
+.review-card {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* Event Detail CSS end */
+
+/* Personal page CSS start  */
+.contents-inner {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.personal-contents-div {
+  color: black !important;
+  background-color: white;
+  padding: 4em;
+}
+
+.personal-event-div {
+  color: black !important;
+  background-color: white;
+}
+
+.personal-contents-div p {
+  color: black !important;
+}
+
+.side-body-personal {
+  text-align: left;
+  width: auto;
+}
+
+.side-list-text-main {
+  font-size: 20px;
+  color: white !important;
+}
+
+.side-list-text-sub {
+  margin: 10px;
+  font-size: 15px;
+  color: white !important;
+}
+
+.profile-J {
+  background-color: rgb(172, 113, 113);
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 25px;
+}
+
+#editor {
+  padding: 16px 24px;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+}
+
+.booking-img {
+  border-radius: 200px;
+  height: 80px;
+  min-width: 70px !important;
+}
+
+/* Main Tab CSS start */
+.main-tabnav {
+  font-size: 0;
+  width: 100%;
+  padding-left: 0px !important;
+  margin-bottom: 58px;
+}
+
+.main-tabnav li {
+  display: inline-block;
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+
+.main-tabnav li a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 3px;
+}
+
+.main-tabnav li a.active:before {
+  background: #194b4f;
+}
+
+.main-tabnav li a.active {
+  border-bottom: 1px solid #fff;
+}
+
+.main-tabnav li a {
+  position: relative;
+  display: block;
+  padding: 0 20px;
+  color: white;
+  line-height: 40px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main-tabnav li a:hover,
+.main-tabnav li a.active {
+  background: #fff;
+  color: #194b4f;
+}
+
+/* Tab CSS start */
+
+/* Tab CSS start */
+.tabnav {
+  font-size: 0;
+  width: 100%;
+  padding-left: 0px !important;
+}
+
+.tabnav li {
+  display: inline-block;
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+
+.tabnav li a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 3px;
+}
+
+.tabnav li a.active:before {
+  background: #194b4f;
+}
+
+.tabnav li a.active {
+  border-bottom: 1px solid #fff;
+}
+
+.tabnav li a {
+  position: relative;
+  display: block;
+  color: #000;
+  padding: 0 20px;
+  line-height: 40px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.tabnav li a:hover,
+.tabnav li a.active {
+  background: #fff;
+  color: #194b4f;
+}
+
+.tabcontent {
+  border-top: none;
+}
+/* Tab CSS start */
+/* Personal page CSS end  */
+
+/* Responsible web-page CSS start */
+@media screen and (max-width: 1190px) {
+  .contents-body {
+    margin: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .personal-contents-div {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .card-image {
+    height: 170px;
+  }
+
+  .main-image-text {
+    font-size: 40px;
+  }
+
+  .sold-out-n-cancel {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  .contents-body {
+    margin: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .card-image {
+    height: 170px;
+  }
+
+  .card-title {
+    font-size: 14px;
+  }
+
+  .sold-out-n-cancel {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .contents-body {
+    margin: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .card-title {
+    font-size: 12px;
+  }
+
+  .sold-out-n-cancel {
+    font-size: 13px;
+  }
+
+  .main-image-text {
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sold-out-n-cancel {
+    font-size: 13px;
+    max-width: 170px;
+  }
+
+  .contents-body {
+    margin: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 24px;
+  }
+
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar__menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar__icons {
+    display: none;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar__toggleBtn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-size: 24px;
+    color: rgb(87, 170, 166);
+  }
+
+  .navbar__menu.active,
+  .navbar__icons.active {
+    display: flex;
+    transition: 1s ease-out;
+  }
+
+  .card-image {
+    max-width: 180px;
+  }
+
+  .main-tabnav li a {
+    position: relative;
+    display: block;
+    padding: 0 20px;
+    color: white;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+/* Responsible web-page CSS end */

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Event</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script src="../JS/main.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <a
+          class="navbar-brand nav-page-title"
+          href="../HTML/1_index_after_signin.html"
+          >Event</a
+        >
+      </div>
+
+      <ul class="navbar__menu">
+        <!-- Search -->
+        <li>
+          <div class="search-container">
+            <form>
+              <input type="text" placeholder="Search" name="search" />
+              <a href="#" data-toggle="modal" data-target="#exampleModal">
+                <span class="glyphicon glyphicon-search nav-icon"></span>
+              </a>
+            </form>
+          </div>
+        </li>
+        <!-- Filter -->
+        <li>
+          <a
+            data-toggle="modal"
+            data-target="#filterModal"
+            style="cursor: pointer"
+            ><span class="glyphicon glyphicon-th-list nav-icon"></span
+          ></a>
+        </li>
+        <!-- User Signup & Signin -->
+        <li>
+          <a href="../HTML/3_personalPage_main.html"
+            ><span class="glyphicon glyphicon-user nav-icon"></span
+          ></a>
+        </li>
+      </ul>
+
+      <a href="#" class="navbar__toggleBtn">
+        <i class="fas fa-bars"></i>
+      </a>
+    </nav>
+    <!-- Navbar end -->
+    <!-- Main contents start -->
+    <div>
+      <div class="contents-body">
+        <!-- Right main contents start -->
+        <div
+          class="contents-body-right personal-event-div"
+          style="padding-top: 2em"
+        >
+          <h1>Edit Event</h1>
+          <a
+            style="font-size: 18px; font-weight: 600"
+            href="../HTML/3_personalPage_main.html"
+            >< Go Back</a
+          >
+          <table style="width: 100%">
+            <tr>
+              <th>&nbsp;</th>
+            </tr>
+            <tr>
+              <td>
+                Event title *
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Swan Lake"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Event category *
+                <div class="form-group">
+                  <select class="form-control" id="categorySelect">
+                    <option>Ballet</option>
+                    <option>Arts</option>
+                    <option>Vorcal music</option>
+                    <option>Orchestra</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Date & Time *
+                <!-- Set the date and time in table start -->
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Date</th>
+                      <th scope="col">Time</th>
+                      <th scope="col">&nbsp;</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">04-06-2023</th>
+                      <td>16:00</td>
+                      <td>18:00</td>
+                      <td>⨁</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">05-06-2023</th>
+                      <td>12:00</td>
+                      <td>18:00</td>
+                      <td>⨁</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">⨁</th>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- Set the date and time in table end -->
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <br />
+                <p>Address</p>
+                Line 1
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Grey Street &, Melbourne St"
+                />
+                Surberb
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="South Brisbane"
+                />
+                Postcode
+                <input class="form-control" type="text" placeholder="4101" />
+                State
+                <div class="form-group">
+                  <select class="form-control" id="categorySelect">
+                    <option>QLD</option>
+                    <option>VIC</option>
+                    <option>NSW</option>
+                    <option>WA</option>
+                    <option>SA</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Ticket
+                <!-- Set the date and time in table start -->
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Grade</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Toal Ticket Number</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Zone A</th>
+                      <td>$ 80</td>
+                      <td>60</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Zone B</th>
+                      <td>$ 60</td>
+                      <td>120</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">⨁</th>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- Set the date and time in table end -->
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Event Owner *
+                <div>
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Eunyoung Hur"
+                  />
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Main Contact *
+                <div>
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="0432 795 394"
+                  />
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Sub Contact *
+                <div>
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="0431 730 141"
+                  />
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Email
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="h.eunyoung3@gmail.com"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <form>
+                  <div class="form-group">
+                    <label
+                      for="exampleFormControlFile1"
+                      style="font-weight: 400"
+                      >Main Image (Please upload image size 200x206 for clearing
+                      image) *</label
+                    >
+                    <input
+                      type="file"
+                      class="form-control-file"
+                      id="exampleFormControlFile1"
+                    />
+                  </div>
+                </form>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Description
+                <div class="editor-menu">
+                  <button id="btn-bold">
+                    <b>B</b>
+                  </button>
+                  <button id="btn-italic">
+                    <i>I</i>
+                  </button>
+                  <button id="btn-underline">
+                    <u>U</u>
+                  </button>
+                  <button id="btn-strike">
+                    <s>S</s>
+                  </button>
+                  <button id="btn-ordered-list">OL</button>
+                  <button id="btn-unordered-list">UL</button>
+                  <button id="btn-image">IMG</button>
+                </div>
+                <div id="editor" contenteditable="true">
+                  General Info <br />
+                  📍 Venue: 64 Adelaide St, Brisbane City QLD 4000 <br />
+                  📅 Dates and times: Select ring purchase <br />
+                  ⏳ Duration: 70 minutes / 120 minutes <br />
+                  👤 Age requirement: 8+. Anyone under the age of 16 must be
+                  accompanied by an adult
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+              <td><button type="button" class="btn btn-info">Save</button></td>
+            </tr>
+          </table>
+        </div>
+        <!-- Right main contents end -->
+      </div>
+    </div>
+    <!-- Main contents end -->
+
+    <!-- Footer start -->
+    <footer>
+      <p>
+        Jasmine Hur<br />
+        <a href="mailto:n10622012@qut.edu.au">n10622012@qut.edu.au</a><br />
+        <a href="mailto:h.eunyoung3@gmail.com">h.eunyoung3@gmail.com</a>
+      </p>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Filter Modal start -->
+    <div
+      class="modal fade"
+      id="filterModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Filter</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="categorySelect">Category</label>
+              <select class="form-control" id="categorySelect">
+                <option>Orchestra</option>
+                <option>Arts</option>
+                <option>Vorcal music</option>
+                <option>Ballet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="zipcode">Zip Code</label>
+              <input
+                class="form-control"
+                id="zipcode"
+                type="text"
+                placeholder="4006"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Filter Modal end -->
+  </body>
+</html>
